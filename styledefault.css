@@ -1,0 +1,171 @@
+body{
+  background-image: url("pics/bg1.png");
+  background-repeat: repeat;
+  background-color: #9d93ab;
+  }
+
+#wrapper{
+  width:450px;
+  height:100%;
+  position: absolute;
+  top:0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#propic{
+  height:100px;
+  width: 100px;
+  border-radius: 5px;
+  position:absolute;
+}
+
+#box{
+  height:120px;
+  width: 430px;
+  border-radius: 5px;
+  position:absolute;
+  top: 25%;
+  transform: translatey(-50%);
+  background-color: #e5deef;
+}
+
+#title{
+  width:350px;
+  position:absolute;
+  top:15px;
+  left: 15px;
+}
+
+.text{
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: left;
+  line-height: 0;
+  font-weight: normal;
+  color: #484848;
+  padding-left: 115px;
+}
+
+h1{
+  font-size: 16pt;
+  letter-spacing: 1.5;
+}
+
+h2{
+  font-size:12pt;
+}
+
+
+#content-box{
+  position: absolute;
+  width: 370px;
+  top: 25%;
+  background-color: #e5deef;
+  box-shadow:0px 0px 10px #9d93ab;
+  border-radius: 5px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#about, #gallery,{
+  width: 370px;
+}
+
+p{
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: left;
+  font-size: 9pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #484848;
+}
+
+.bunnysop{
+  text-align: left;
+}
+
+h3{
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: left;
+  font-size: 14pt;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  letter-spacing: 1.5;
+  color: #484848;
+}
+
+
+.toggle:hover{
+  border-radius: 50%;
+}
+
+#nav-box{
+  background-color: #bdbdbd;
+  border-radius: 50px;
+  width: 30px;
+  position: absolute;
+  left: 100%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.icon img{
+  border-radius: 5px;
+  background-color: #26212d;
+  line-height: 0;
+  border: 5px solid #26212d;
+  height: 20px;
+  width: 20px;
+}
+
+.gallerybutton{
+  margin-top: 5px;
+}
+
+.icon img:hover{
+     background-color: #74a2c7;
+     border: 5px solid #74a2c7;
+}
+
+
+
+#scrollbar{
+  margin-bottom: 5px;
+  height: 60px;
+  width:370px;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #26212d;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8e5f1;
+  border-radius: 100px;
+}
+
+
+#scrollbar img{
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  overflow-y: hidden;
+}
+
+.large{
+  width:370px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}

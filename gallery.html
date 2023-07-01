@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <link id="pagestyle" href="styledefault.css" rel="stylesheet">
+  <title>It's a Bunnysop</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="nav-box">
+      <div class="icon">
+        <a href="index.html">
+          <img class="indexbutton" src="pics/home.png">
+        </a>
+      </div>
+
+      <div class="icon">
+        <a href="gallery.html">
+          <img class="gallerybutton" src="pics/gallery.png">
+        </a>
+      </div>
+    </div>
+
+    <div id="content-box">
+      <div id="gallery">
+        <h3>BNUYS</h3>
+        <p class="bunnysop">
+          <b>૮₍ ´ ꒳ `₎ა&nbsp; ₍ᐢ. ̫ .ᐢ₎</b><br>
+          &nbsp;/) /)<br>
+          ( • ༝•)<br>
+        </p>
+
+        <div id="scrollbar">
+          <img src="pics/pic0.gif">
+          <img src="pics/pic1.png">
+          <img src="pics/pic2.png">
+          <img src="pics/pic3.png">
+          <img src="pics/pic4.png">
+          <img onclick="displayText('pic5.png')" src="pics/pic5.png" data-id="pic5" data-text="Mreow! I am very sorry but I do not know the way to the exit! I can’t help! You have to find someone else!">
+          <img src="pics/pic6.png">
+          <img src="pics/pic7.png">
+          <img src="pics/pic8.png">
+          <img src="pics/pic9.png">
+          <img src="pics/pic10.png">
+          <img src="pics/pic11.png">
+          <img src="pics/pic12.png">
+          <img src="pics/pic13.png">
+          <img src="pics/pic14.png">
+          <img src="pics/pic15.png">
+          <img src="pics/pic16.png">
+          <img src="pics/pic17.png">
+          <img src="pics/pic18.png">
+          <img src="pics/pic19.png">
+          <img onclick="displayText('pic20.png')" src="pics/pic20.png" data-id="pic20" data-text="I am sorry, miss. I am new to this area and I don't know my way around! But if you go further down there should be someone who knows the directions!">
+          <img src="pics/pic21.png">
+          <img src="pics/pic22.png">
+          <img src="pics/pic23.png">
+          <img src="pics/pic24.png">
+          <img src="pics/pic25.png">
+          <img src="pics/pic26.png">
+          <img src="pics/pic27.png">
+          <img src="pics/pic28.png">
+          <img src="pics/pic29.png">
+          <img src="pics/pic30.png">
+          <img src="pics/pic31.png">
+          <img src="pics/pic32.png">
+          <img src="pics/pic33.png">
+          <img src="pics/pic34.png">
+          <img onclick="displayText('pic35.png')" src="pics/pic35.png" data-id="pic35" data-text="*Purr* - I may know or I may not know, but I would advise to look for someone more reliable for directions">
+          <img src="pics/pic36.png">
+          <img src="pics/pic37.png">
+          <img src="pics/pic38.png">
+          <img src="pics/pic39.png">
+          <img src="pics/pic40.png">
+          <img src="pics/pic41.png">
+          <img src="pics/pic42.png">
+          <img src="pics/pic43.png">
+          <img onclick="displayText('pic44.png')" src="pics/pic44.png" data-id="pic44" data-text="Almost there! Bnuy King is just up ahead! Keep looking!">
+          <img src="pics/pic45.png">
+          <img src="pics/pic46.png">
+          <img src="pics/pic47.png">
+          <img src="pics/pic48.png">
+          <img src="pics/pic49.png">
+          <img onclick="displayText('pic50.png')" src="pics/pic50.png" data-id="pic50" data-text="I am the Bnuy King, Miss Suep. I have been waiting for you for quite some time now and I know of all the endeavors you went through to find your way back home. I will personally guide you back, but before that. I shall grant you a reward for the long journey you went through">
+
+        </div>
+
+        <img id="piclarge" class="large" src="pics/pic0.gif">
+        <div id="textField" style="display: none;">
+          <p id="text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box">
+      <div id="title">
+        <img id="propic" src="pics/propic.gif">
+        <h1 class="text">BUNNYSOP</h1>
+        <h2 class="text">a bnuy tale</h2>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var gallery = document.getElementById("gallery");
+    var piclarge = document.getElementById("piclarge");
+    var textField = document.getElementById("textField");
+    var text = document.getElementById("text");
+
+gallery.addEventListener("click", function(event) {
+      var targetElement = event.target;
+      if (targetElement.tagName === "IMG") {
+        piclarge.src = targetElement.src;
+        var textValue = targetElement.getAttribute("data-text");
+        if (textValue) {
+          if (targetElement.getAttribute("data-id") === "pic50") {
+            text.innerHTML = '<a href="https://drive.google.com/drive/u/0/folders/18RHUN_JhGSnYesftfT-11hFfJI9fYk59">' + textValue + '</a>';
+          } else {
+            text.textContent = textValue;
+          }
+          textField.style.display = "block";
+        } else {
+          text.textContent = "";
+          textField.style.display = "none";
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
